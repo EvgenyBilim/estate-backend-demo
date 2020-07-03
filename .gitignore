@@ -1,0 +1,8 @@
+/.idea
+/env
+/core/media/core/storage/**
+/core/media/core/photos/full/**
+/core/media/core/photos/resize/**
+/core/media/core/photos/preview_285/**
+/core/media/core/photos/preview_531/**
+

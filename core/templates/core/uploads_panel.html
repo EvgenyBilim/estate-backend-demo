@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Загрузка{% endblock %}
+
+{% block content %}
+<div class="content content_margin" style="display: block;">
+
+    <a href="/uploads/homes/">Дома</a>
+    <br><br>
+    <a href="/uploads/plans/">Планировки</a>
+    <br><br>
+    <a href="/uploads/category/">Категории</a>
+    <br><br>
+    <a href="/uploads/?delete=homes" style="color: #999999;">Удалить дома</a>
+    <br><br><br><br>
+    <a href="/uploads/download-zip/">Пустой zip</a>
+    <br><br>
+    <a href="/uploads/photos/">Фото</a>
+    <br><br>
+    <a href="/uploads/?delete=photos" style="color: #999999;">Удалить фото</a>
+    <br><br><br><br>
+    <a href="/uploads/metro/">Метро</a>
+    <br><br>
+    <a href="/uploads/?delete=metro" style="color: #999999;">Удалить метро</a>
+
+</div>
+{% endblock %}

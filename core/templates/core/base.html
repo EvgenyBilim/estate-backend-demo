@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" href="{% static '/core/img/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/style.css' %}" />
+	{% block style %}{% endblock %}
+</head>
+<body>
+
+<div class="menu">
+    <div class="menu__container">
+        <a href="/uploads/" class="menu__item{{ menu_uploads }}">Загрузка</a>
+        <a href="/cache/" class="menu__item {{ menu_cache }}">Кэширование</a>
+        <a href="/admin/" class="menu__item">Админка</a>
+        <a href="/homes/" class="menu__item menu__item_right">Сайт</a>
+    </div>
+</div>
+
+
+{% block content %}{% endblock %}
+
+</body>
+</html>
